@@ -2,7 +2,7 @@
 import os
 import time
 import ctypes
-import wikipedia
+# import wikipedia
 import datetime
 import json
 import re

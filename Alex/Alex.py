@@ -1,8 +1,10 @@
 # Ở bước này, các bạn import các thư viện cần thiết cho quá trình tạo nên con trợ lý ảo nhá. Các bạn nào chạy mà bị lỗi thì lên Google search cách tải thư viện cho python nha.
 import os
+import playsound
+import speech_recognition as sr
 import time
 import ctypes
-# import wikipedia
+import wikipedia
 import datetime
 import json
 import re
@@ -10,17 +12,17 @@ import webbrowser
 import smtplib
 import requests
 import urllib.request as urllib2
-# from selenium import webdriver
-# from selenium.webdriver.common.keys import Keys
-# from webdriver_manager.chrome import ChromeDriverManager
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 from time import strftime
-# from gtts import gTTS
-# from youtube_search import YoutubeSearch
+from gtts import gTTS
+from youtube_search import YoutubeSearch
 
 # Khúc này là khai báo các biến cho quá trình làm con Alex
-# wikipedia.set_lang('vi')
-# language = 'vi'
-# path = ChromeDriverManager().install()
+wikipedia.set_lang('vi')
+language = 'vi'
+path = ChromeDriverManager().install()
 
 
 # Text - to - speech: Chuyển đổi văn bản thành giọng nói
@@ -33,19 +35,19 @@ def speak(text):
 
 
 # Speech - to - text: Chuyển đổi giọng nói bạn yêu cầu vào thành văn bản hiện ra khi máy trả lại kết quả đã nghe
-# def get_audio():
-#     print("\nBot: \tĐang nghe \t --__-- \n")
-#     # r = sr.Recognizer()
-#     # with sr.Microphone() as source:
-#         print("Tôi: ", end='')
-#         audio = r.listen(source, phrase_time_limit=8)
-#         try:
-#             text = r.recognize_google(audio, language="vi-VN")
-#             print(text)
-#             return text.lower()
-#         except:
-#             print("...")
-#             return 0
+def get_audio():
+    print("\nBot: \tĐang nghe \t --__-- \n")
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print("Tôi: ", end='')
+        audio = r.listen(source, phrase_time_limit=8)
+        try:
+            text = r.recognize_google(audio, language="vi-VN")
+            print(text)
+            return text.lower()
+        except:
+            print("...")
+            return 0
 
 
 # Ở dòng này, Bot sẽ chào tạm biệt bạn khi bạn tạm biệt nó ^^ 

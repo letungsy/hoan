@@ -15,7 +15,7 @@ import urllib.request as urllib2
 # from webdriver_manager.chrome import ChromeDriverManager
 from time import strftime
 # from gtts import gTTS
-from youtube_search import YoutubeSearch
+# from youtube_search import YoutubeSearch
 
 # Khúc này là khai báo các biến cho quá trình làm con Alex
 wikipedia.set_lang('vi')

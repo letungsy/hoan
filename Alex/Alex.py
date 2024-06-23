@@ -11,8 +11,8 @@ import smtplib
 import requests
 import urllib.request as urllib2
 # from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.common.keys import Keys
+# from webdriver_manager.chrome import ChromeDriverManager
 from time import strftime
 from gtts import gTTS
 from youtube_search import YoutubeSearch

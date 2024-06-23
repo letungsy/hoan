@@ -1,6 +1,5 @@
 # Ở bước này, các bạn import các thư viện cần thiết cho quá trình tạo nên con trợ lý ảo nhá. Các bạn nào chạy mà bị lỗi thì lên Google search cách tải thư viện cho python nha.
 import os
-import speech_recognition as sr
 import time
 import ctypes
 import wikipedia
@@ -36,8 +35,8 @@ def speak(text):
 # Speech - to - text: Chuyển đổi giọng nói bạn yêu cầu vào thành văn bản hiện ra khi máy trả lại kết quả đã nghe
 def get_audio():
     print("\nBot: \tĐang nghe \t --__-- \n")
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
+    # r = sr.Recognizer()
+    # with sr.Microphone() as source:
         print("Tôi: ", end='')
         audio = r.listen(source, phrase_time_limit=8)
         try:

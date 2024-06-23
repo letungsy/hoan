@@ -18,9 +18,9 @@ from time import strftime
 # from youtube_search import YoutubeSearch
 
 # Khúc này là khai báo các biến cho quá trình làm con Alex
-wikipedia.set_lang('vi')
-language = 'vi'
-path = ChromeDriverManager().install()
+# wikipedia.set_lang('vi')
+# language = 'vi'
+# path = ChromeDriverManager().install()
 
 
 # Text - to - speech: Chuyển đổi văn bản thành giọng nói

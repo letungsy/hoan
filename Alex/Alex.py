@@ -1,6 +1,5 @@
 # Ở bước này, các bạn import các thư viện cần thiết cho quá trình tạo nên con trợ lý ảo nhá. Các bạn nào chạy mà bị lỗi thì lên Google search cách tải thư viện cho python nha.
 import os
-import playsound
 import speech_recognition as sr
 import time
 import ctypes
